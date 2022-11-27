@@ -1,0 +1,246 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   outline.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   characters.txt
+        modified:   outline.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git add outline.txt chapter1.txt characters.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter1.txt
+        modified:   characters.txt
+        modified:   outline.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit - m "begin work on chapter 1"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'begin work on chapter 1' did not match any file(s) known to git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit -m "begin work on chapter 1"
+[master c4612f8] begin work on chapter 1
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+ create mode 100644 chapter1.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git log
+commit c4612f8faebfad3eaffb3bbffd178ca9c0539443 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:12:45 2022 +0100
+
+    begin work on chapter 1
+
+commit c97adf9c4e44943db8beb6637c4d28af6ad83f75
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:09:17 2022 +0100
+
+    Change 2
+
+commit 41d6ef75b92bbcc0c0f592ea784a07735a94ab2f
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:07:09 2022 +0100
+
+    my massege 1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   outline.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter1.txt
+        modified:   outline.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   chapter1.txt
+        modified:   outline.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit -m "Finish chapter 1"
+[master b50219f] Finish chapter 1
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git log
+commit b50219f63fbd997f5351d8b44db77020866290e4 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:16:53 2022 +0100
+
+    Finish chapter 1
+
+commit c4612f8faebfad3eaffb3bbffd178ca9c0539443
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:12:45 2022 +0100
+
+    begin work on chapter 1
+
+commit c97adf9c4e44943db8beb6637c4d28af6ad83f75
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:09:17 2022 +0100
+
+    Change 2
+
+commit 41d6ef75b92bbcc0c0f592ea784a07735a94ab2f
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:07:09 2022 +0100
+
+    my massege 1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter1.txt
+        modified:   outline.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   chapter1.txt
+        new file:   chapter2
+        modified:   outline.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit -m "split chapter one into two pieces"
+[master 69d9034] split chapter one into two pieces
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+ create mode 100644 chapter2
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git log
+commit 69d903491dac9b9199708874ae42754298a1b81b (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:20:20 2022 +0100
+
+    split chapter one into two pieces
+
+commit b50219f63fbd997f5351d8b44db77020866290e4
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:16:53 2022 +0100
+
+    Finish chapter 1
+
+commit c4612f8faebfad3eaffb3bbffd178ca9c0539443
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Nov 27 12:12:45 2022 +0100
+
+    begin work on chapter 1
+
+commit c97adf9c4e44943db8beb6637c4d28af6ad83f75
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:09:17 2022 +0100
+
+    Change 2
+
+commit 41d6ef75b92bbcc0c0f592ea784a07735a94ab2f
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Nov 26 22:07:09 2022 +0100
+
+    my massege 1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$

@@ -1,0 +1,109 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Folder_1/  Folder_2/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Folder_1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ cd..
+bash: cd..: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents
+$ ls
+ 010_Dokumenty/   Krypto/         Python_cmd/                    loty.txt
+ 020_Excele/      Osoby/          Zakupy/                        mBank/
+ Działka/        'Prawo jazdy'/  'Zrzuty ekranu — skrót .lnk'*
+ Inne/            Projekty/       git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents
+$ cd git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Folder_1/  Folder_2/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ open .
+bash: open: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ open .
+bash: open: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ start .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ pwd
+/c/Users/Michal/Desktop/My_documents/git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Folder_1/  Folder_2/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Folder_1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ touch purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ start .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ mkdir plants
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ pwd
+/c/Users/Michal/Desktop/My_documents/git/Folder_1
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ touch new.pdf
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+new.pdf  plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ rm new.pdf
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ mkdir deleteme
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+deleteme/  plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ rm -rf deleteme/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls
+plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$ ls -a
+./  ../  plants/  purple.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Folder_1
+$

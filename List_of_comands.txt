@@ -1,0 +1,24 @@
+#basic comands
+ls - list - lista elementów w folderze
+ls -a - lista wszystkich elementów w folderze razem z ukrytymi
+cd - zmina scieżki
+cd .. - wycowanie do poziomu wyżej
+start . - otwarcie obecnej lokalizacji
+pwd - wyświetlenie obecnej ścieżki
+touch - tworzenie plików
+mkdir - tworzenie folderów
+rm <nazwa> - usuwanie plików
+rm -rf <nazwa> - usuwanie folderu
+code . - otworzenie visual studio
+
+#git commands
+git init - inicjalizacja repo
+git status - status repo
+git add <nazwa> - dodanie do repo
+git add . - dodanie do repo wszystkich plików
+git commit -m "example message" - zacomitowanie dodanych zmian w repo
+git log - log zmian na repo
+
+
+
+

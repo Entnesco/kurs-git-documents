@@ -1,0 +1,43 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+komendy.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ mkdir MyFirstNovel
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+MyFirstNovel/  komendy.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd MyFirstNovel/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel
+$ git init
+Initialized empty Git repository in C:/Users/Michal/Desktop/My_documents/git/MyFirstNovel/.git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ ls -a
+./  ../  .git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ cd .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel/.git (GIT_DIR!)
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$

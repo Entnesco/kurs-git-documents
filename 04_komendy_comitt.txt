@@ -1,0 +1,71 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   characters.txt
+        new file:   outline.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit - m "my massege 1"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'my massege 1' did not match any file(s) known to git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit -m "my massege 1"
+[master (root-commit) 41d6ef7] my massege 1
+ 2 files changed, 4 insertions(+)
+ create mode 100644 characters.txt
+ create mode 100644 outline.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   outline.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git add outline.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   outline.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git commit
+[master c97adf9] Change 2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/MyFirstNovel (master)
+$
