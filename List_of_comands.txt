@@ -18,6 +18,8 @@ git add <nazwa> - dodanie do repo
 git add . - dodanie do repo wszystkich plików
 git commit -m "example message" - zacomitowanie dodanych zmian w repo
 git log - log zmian na repo
+git log --oneline - log jednolinijkowy
+
 
 
 
