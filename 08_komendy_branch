@@ -1,0 +1,201 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ ls
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ mkdir RoadtripPaylist
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ cd RoadtripPaylist/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist
+$ git init
+Initialized empty Git repository in C:/Users/Michal/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist/.git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ touch playlist.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git starus
+git: 'starus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   playlist.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git commit -m "add play list header"
+[master (root-commit) 9065e8e] add play list header
+ 1 file changed, 2 insertions(+)
+ create mode 100644 playlist.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git commit -m "add songs"
+[master 4cf0ea0] add songs
+ 1 file changed, 2 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch
+* master
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch
+* master
+  oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> master, oldies)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git branch
+  master
+* oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> oldies, master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git commit -m "add two more songs"
+[oldies 324fd57] add two more songs
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git status
+On branch oldies
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git log
+commit 324fd578f21afbc601bbd81b7568b8f147834085 (HEAD -> oldies)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:24:46 2022 +0100
+
+    add two more songs
+
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch master
+Switched to branch 'master'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch master
+Switched to branch 'master'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch
+* master
+  oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$
