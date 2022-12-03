@@ -23,6 +23,7 @@ git commit --amend - zacomitowanie nowego elementu do poprzedniego commita
 git branch - lista gałęzi 
 git branch <branch_name> - tworzenie nowej gałęzi
 git switch <branch_name> - zmiana gałęzi
+git commit -a -m <comment> - git add. oraz git commit -m w jednym
 
 
 
