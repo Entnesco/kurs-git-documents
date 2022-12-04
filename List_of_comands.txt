@@ -24,6 +24,10 @@ git branch - lista gałęzi
 git branch <branch_name> - tworzenie nowej gałęzi
 git switch <branch_name> - zmiana gałęzi
 git commit -a -m <comment> - git add. oraz git commit -m w jednym
+git checkout <branch_name> - git switch and more
+git switch -c <branch_name> - create and switch to new branch
+git branch -D <branch_name> - force delete branch
+git branch -m <new_name> - rename branch
 
 
 

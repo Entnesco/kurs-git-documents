@@ -1,0 +1,178 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ code .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ ls
+Branching/  GitIgnorDemo/  MyFirstNovel/  Shopping/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ cd Branching/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ ls
+RoadtripPaylist/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ cd RoadtripPaylist/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ gir branch
+bash: gir: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch
+  emptyplaylist
+  georges
+* master
+  oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git checkout oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git branch
+  emptyplaylist
+  georges
+  master
+* oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch master
+Switched to branch 'master'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git switch -c recentish-music
+Switched to a new branch 'recentish-music'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$ git commit -a -m add song to recentish music branch
+fatal: paths 'song ...' with -a does not make sense
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$ git commit -a -m "add song to recentish music branch"
+[recentish-music 64ad6eb] add song to recentish music branch
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$ git status
+On branch recentish-music
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$ git log
+commit 64ad6eb305d10c7661398e24cd151d0b4d9c65e8 (HEAD -> recentish-music)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Dec 4 17:20:38 2022 +0100
+
+    add song to recentish music branch
+
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (recentish-music)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git status
+On branch oldies
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   playlist.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch emptyplaylist
+error: Your local changes to the following files would be overwritten by checkout:
+        playlist.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git commit -a -m "add two Van morrison songs"
+[oldies 3aef15f] add two Van morrison songs
+ 1 file changed, 2 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git status
+On branch oldies
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git log
+commit 3aef15fd6767dc91fc7458299de4f3790c50e7b8 (HEAD -> oldies)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Dec 4 17:24:15 2022 +0100
+
+    add two Van morrison songs
+
+commit 45fb337a0d5713186fcb2f853bf5b92571b8456c
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:30:26 2022 +0100
+
+    add two another songs
+
+commit 324fd578f21afbc601bbd81b7568b8f147834085
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:24:46 2022 +0100
+
+    add two more songs
+
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch -c chicken
+Switched to a new branch 'chicken'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (chicken)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git status
+On branch oldies
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chicens.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$
