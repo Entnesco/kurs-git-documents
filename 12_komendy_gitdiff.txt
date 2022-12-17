@@ -1,0 +1,414 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ ls
+Branching/  GirDiff/  GitIgnorDemo/  MyFirstNovel/  Shopping/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ cd GitDiff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ ls
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ mkdir Colors
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ cd Colors/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors
+$ git init
+Initialized empty Git repository in C:/Users/Michal/Desktop/My_documents/git/Practise_repo/GitDiff/Colors/.git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ touch colors.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -m "initial commit"
+[master (root-commit) 2d82286] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 colors.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -am "add red"
+[master 402f65f] add red
+ 1 file changed, 1 insertion(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -am "add orange"
+[master bca546a] add orange
+ 1 file changed, 1 insertion(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -am "add yellow and green"
+[master ae4ab07] add yellow and green
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -am "add blue purple"
+[master c3b79b7] add blue purple
+ 1 file changed, 2 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git llog
+git: 'llog' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git log
+commit c3b79b77ebf08bfcf94bebe77ed6872d00195bb2 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 23:17:29 2022 +0100
+
+    add blue purple
+
+commit ae4ab075881fa9f7f9119ad335d899fee73b3141
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 23:17:06 2022 +0100
+
+    add yellow and green
+
+commit bca546a720b9608594efdb9271513eea33300e76
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 23:16:42 2022 +0100
+
+    add orange
+
+commit 402f65fdd603afa4d2d0e5294296415abf039528
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 23:16:24 2022 +0100
+
+    add red
+
+commit 2d82286376ecc1859802669689137a7d61f0f42b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 23:15:35 2022 +0100
+
+    initial commit
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   colors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+diff --git a/colors.txt b/colors.txt
+index 16c4f5d..933f19e 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,4 @@ orange
+ yellow
+ green
+ blue
+-purple
++indigo
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/colors.txt b/colors.txt
+index 16c4f5d..933f19e 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,4 @@ orange
+ yellow
+ green
+ blue
+-purple
++indigo
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/colors.txt b/colors.txt
+index 16c4f5d..933f19e 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,4 @@ orange
+ yellow
+ green
+ blue
+-purple
++indigo
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -m "add indigo"
+[master 1668db7] add indigo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ touch numers.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   numers.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   colors.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --stages
+error: invalid option: --stages
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --staged
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff -- staged
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --staged
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff -cached
+error: invalid option: -cached
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --cached
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --staged
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff HEAD
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ ^C
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$

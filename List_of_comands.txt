@@ -30,7 +30,11 @@ git branch -D <branch_name> - force delete branch
 git branch -m <new_name> - rename branch
 git merge <branch_name> - merging branches
 git branch -v - more info abaut evry branch
-git diff - lista różnicc w repo
+git diff - lista niezatwierdzonych zmian
+git diff HEAD - lista wszystkich różnic
+git diff --staged - lista różnic w dodanych plikach
+git diff --cached - lista różnic w dodanych plikach
+
 
 
 
