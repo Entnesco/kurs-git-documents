@@ -1,0 +1,263 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ mkdir Patronus
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching
+$ cd Patronus/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus
+$ git init
+Initialized empty Git repository in C:/Users/Michal/Desktop/My_documents/git/Practise_repo/Branching/Patronus/.git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ touch patronus.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ commit -a -m "add empty patronus file"
+bash: commit: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        patronus.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git commit -a -m "add empty patronus file"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        patronus.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        patronus.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   patronus.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git commit -m "add empty patronus file"
+[master (root-commit) 296788c] add empty patronus file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 patronus.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git branch
+* master
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git branch harry snape
+fatal: not a valid object name: 'snape'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git branch harry
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git branch snape
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git branch
+  harry
+* master
+  snape
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (master)
+$ git switch harry
+Switched to branch 'harry'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (harry)
+$ git branch
+* harry
+  master
+  snape
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (harry)
+$ git commit -a -m "add harry's stag patronus"
+[harry 9fc72f8] add harry's stag patronus
+ 1 file changed, 26 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (harry)
+$ git status
+On branch harry
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (harry)
+$ git log
+commit 9fc72f81ccb434db6dc0aa8755daeb82d20d42e0 (HEAD -> harry)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:11:22 2022 +0100
+
+    add harry's stag patronus
+
+commit 296788cf09b785118d3a3d9f348835657951ab73 (snape, master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:08:02 2022 +0100
+
+    add empty patronus file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (harry)
+$ git switch snape
+Switched to branch 'snape'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git commit -a -m "add snape's doe patronus"
+[snape 4d70dbb] add snape's doe patronus
+ 1 file changed, 16 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git status
+On branch snape
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git log
+commit 4d70dbb4a59054d78183a460df78f2f1621250de (HEAD -> snape)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:12:56 2022 +0100
+
+    add snape's doe patronus
+
+commit 296788cf09b785118d3a3d9f348835657951ab73 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:08:02 2022 +0100
+
+    add empty patronus file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git branch lily
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git branch
+  harry
+  lily
+  master
+* snape
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (snape)
+$ git switch lily
+Switched to branch 'lily'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git commit -a -m "add lily's doe patronus"
+[lily fbbbc10] add lily's doe patronus
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git log
+commit fbbbc100db5f3e32bb7f6777567f512c3d1b98e9 (HEAD -> lily)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:14:46 2022 +0100
+
+    add lily's doe patronus
+
+commit 4d70dbb4a59054d78183a460df78f2f1621250de (snape)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:12:56 2022 +0100
+
+    add snape's doe patronus
+
+commit 296788cf09b785118d3a3d9f348835657951ab73 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 17 16:08:02 2022 +0100
+
+    add empty patronus file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git status
+On branch lily
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git branhc
+git: 'branhc' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git branch
+  harry
+* lily
+  master
+  snape
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git branch -D snape
+Deleted branch snape (was 4d70dbb).
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ git branch
+  harry
+* lily
+  master
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$ ^C
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/Patronus (lily)
+$

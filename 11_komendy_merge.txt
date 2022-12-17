@@ -1,0 +1,131 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch
+  2000s
+  emptyplaylist
+  georges
+* master
+  oldies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git branch -v
+  2000s         b9cd428 add two more songs
+  emptyplaylist 217246a empty play list
+  georges       ad66bad remove wrong songs
+* master        4cf0ea0 add songs
+  oldies        3aef15f add two Van morrison songs
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git switch oldies
+Switched to branch 'oldies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git log
+commit 3aef15fd6767dc91fc7458299de4f3790c50e7b8 (HEAD -> oldies)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Dec 4 17:24:15 2022 +0100
+
+    add two Van morrison songs
+
+commit 45fb337a0d5713186fcb2f853bf5b92571b8456c
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:30:26 2022 +0100
+
+    add two another songs
+
+commit 324fd578f21afbc601bbd81b7568b8f147834085
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:24:46 2022 +0100
+
+    add two more songs
+
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (oldies)
+$ git switch master
+Switched to branch 'master'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810 (HEAD -> master)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git merge oldies
+Updating 4cf0ea0..3aef15f
+Fast-forward
+ playlist.txt | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$ git log
+commit 3aef15fd6767dc91fc7458299de4f3790c50e7b8 (HEAD -> master, oldies)
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sun Dec 4 17:24:15 2022 +0100
+
+    add two Van morrison songs
+
+commit 45fb337a0d5713186fcb2f853bf5b92571b8456c
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:30:26 2022 +0100
+
+    add two another songs
+
+commit 324fd578f21afbc601bbd81b7568b8f147834085
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:24:46 2022 +0100
+
+    add two more songs
+
+commit 4cf0ea00a78c780f665925fb99107a28d0fb7810
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:19:54 2022 +0100
+
+    add songs
+
+commit 9065e8e95c14d69eaf42ceeff9b1f38ca7df095b
+Author: Michal Lerman <grantes208@gmail.com>
+Date:   Sat Dec 3 14:18:56 2022 +0100
+
+    add play list header
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Branching/RoadtripPaylist (master)
+$
