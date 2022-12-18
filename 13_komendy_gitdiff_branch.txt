@@ -1,0 +1,161 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ code .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ ls
+Branching/  GitDiff/  GitIgnorDemo/  MyFirstNovel/  Shopping/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ cd Git
+bash: cd: Git: No such file or directory
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ cd GitDiff/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ ls
+Colors/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ cd Colors/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   colors.txt
+        new file:   numers.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --cached
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff --staged
+diff --git a/colors.txt b/colors.txt
+index 933f19e..26ec8e7 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -3,4 +3,5 @@ orange
+ yellow
+ green
+ blue
+-indigo
+\ No newline at end of file
++indigo
++violet
+diff --git a/numers.txt b/numers.txt
+new file mode 100644
+index 0000000..5626abf
+--- /dev/null
++++ b/numers.txt
+@@ -0,0 +1 @@
++one
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git diff
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -m "add violet and one number"
+[master c42892d] add violet and one number
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 numers.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -am "add three more numbers"
+[master 8666d2c] add three more numbers
+ 1 file changed, 3 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git switch -c odd-numbers
+Switched to a new branch 'odd-numbers'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git -am "removed two and four"
+unknown option: -am
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git commit -am "remove two and four"
+[odd-numbers e43fc01] remove two and four
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git status
+On branch odd-numbers
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git status
+On branch odd-numbers
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   numers.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git commit -am "add five"
+[odd-numbers b59f8d4] add five
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git branch
+  master
+* odd-numbers
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$ git diff master odd-numbers
+diff --git a/numers.txt b/numers.txt
+index c40a3bd..103af5d 100644
+--- a/numers.txt
++++ b/numers.txt
+@@ -1,4 +1,3 @@
+ one
+-two
+ three
+-four
+\ No newline at end of file
++five
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (odd-numbers)
+$

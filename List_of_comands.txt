@@ -34,8 +34,11 @@ git diff - lista niezatwierdzonych zmian
 git diff HEAD - lista wszystkich różnic
 git diff --staged - lista różnic w dodanych plikach
 git diff --cached - lista różnic w dodanych plikach
-
-
+git diff HEAD <filename> - porównanie z wskazanym plikiem
+git diff --cached <filename> - porównanie z wskazanym plikiem
+git diff --staged <filename> - porównanie z wskazanym plikiem
+git diff branch1 branch2 - porówniania 2 branchów
+git diff commit1 commit2 - porównania 2 commitów
 
 
 
