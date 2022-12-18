@@ -1,4 +1,4 @@
-#basic comands
+###basic comands###
 ls - list - lista elementów w folderze
 ls -a - lista wszystkich elementów w folderze razem z ukrytymi
 cd - zmina scieżki
@@ -11,7 +11,10 @@ rm <nazwa> - usuwanie plików
 rm -rf <nazwa> - usuwanie folderu
 code . - otworzenie visual studio
 
-#git commands
+
+###git commands###
+
+#basic comands
 git init - inicjalizacja repo
 git status - status repo
 git add <nazwa> - dodanie do repo
@@ -20,6 +23,8 @@ git commit -m "example message" - zacomitowanie dodanych zmian w repo
 git log - log zmian na repo
 git log --oneline - log jednolinijkowy
 git commit --amend - zacomitowanie nowego elementu do poprzedniego commita
+
+#git branch commands
 git branch - lista gałęzi 
 git branch <branch_name> - tworzenie nowej gałęzi
 git switch <branch_name> - zmiana gałęzi
@@ -28,8 +33,12 @@ git checkout <branch_name> - git switch and more
 git switch -c <branch_name> - create and switch to new branch
 git branch -D <branch_name> - force delete branch
 git branch -m <new_name> - rename branch
-git merge <branch_name> - merging branches
 git branch -v - more info abaut evry branch
+
+#git merge command
+git merge <branch_name> - merging branches
+
+#git diff command
 git diff - lista niezatwierdzonych zmian
 git diff HEAD - lista wszystkich różnic
 git diff --staged - lista różnic w dodanych plikach
