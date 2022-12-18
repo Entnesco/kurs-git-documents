@@ -1,0 +1,337 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ code .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Kurs_dokumenty/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ ls
+01_komendy.txt              06_komendy_commiting_exercise.txt  11_komendy_merge.txt
+02_komendy_init_status.txt  07_komendy_gitignore.txt           12_komendy_gitdiff.txt
+03_komendy_add.txt          08_komendy_branch.txt              13_komendy_gitdiff_branch.txt
+04_komendy_comitt.txt       09_komendy_branch_2.txt            List_of_comands.txt
+05_komendy_comitt_more.txt  10_komendy_branch_exercise
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   List_of_comands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        13_komendy_gitdiff_branch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git commit -m "add more git diff comands"
+[master baa4bf3] add more git diff comands
+ 2 files changed, 166 insertions(+), 2 deletions(-)
+ create mode 100644 13_komendy_gitdiff_branch.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ ls
+Branching/  GitDiff/  GitIgnorDemo/  MyFirstNovel/  Shopping/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo
+$ cd GitDiff/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ ls
+Colors/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ cd Colors/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ ls
+colors.txt  numers.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   colors.txt
+        modified:   numers.txt
+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git commit -m "commit new changes"
+[master 035f914] commit new changes
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ cd..
+bash: cd..: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/Colors (master)
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ git clone https://github.com/Colt/git-diff-exercise
+Cloning into 'git-diff-exercise'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 1), reused 15 (delta 1), pack-reused 0
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (1/1), done.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ ls
+Colors/  git-diff-exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff
+$ cd git-diff-exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ ls
+fleetwoodmac.txt  queen.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git status
+On branch current
+Your branch is up to date with 'origin/current'.
+
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ branch
+bash: branch: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git branch
+* current
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git switch 1090s
+fatal: invalid reference: 1090s
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git switch 1970s
+Switched to a new branch '1970s'
+branch '1970s' set up to track 'origin/1970s'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (1970s)
+$ git branch
+* 1970s
+  current
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (1970s)
+$ git status
+On branch 1970s
+Your branch is up to date with 'origin/1970s'.
+
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (1970s)
+$ git diff 1970s current
+diff --git a/fleetwoodmac.txt b/fleetwoodmac.txt
+index 6f44367..653b184 100644
+--- a/fleetwoodmac.txt
++++ b/fleetwoodmac.txt
+@@ -1,5 +1,5 @@
+-Lead Vocals: Jeremy Spencer
+-Lead Guitar: Lindsey Buckingham
++Lead Vocals: Stevie Nicks
++Lead Guitar: Mike Campbell
+ Bass: John McVie
+ Drums: Mick Fleetwood
+-Keyboard: None
+\ No newline at end of file
++Keyboard: Christine McVie
+\ No newline at end of file
+diff --git a/queen.txt b/queen.txt
+index 2ab2d04..0e0fa0d 100644
+--- a/queen.txt
++++ b/queen.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Freddie Mercury
++Lead Vocals: Adam Lambert
+ Lead Guitar: Brian May
+-Bass: Mike Grose
++Bass: Neil Fairclough
+ Drums: Roger Taylor
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (1970s)
+$ git diff 1970s current queen.txt
+diff --git a/queen.txt b/queen.txt
+index 2ab2d04..0e0fa0d 100644
+--- a/queen.txt
++++ b/queen.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Freddie Mercury
++Lead Vocals: Adam Lambert
+ Lead Guitar: Brian May
+-Bass: Mike Grose
++Bass: Neil Fairclough
+ Drums: Roger Taylor
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (1970s)
+$ git switch current
+Switched to branch 'current'
+Your branch is up to date with 'origin/current'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git status
+On branch current
+Your branch is up to date with 'origin/current'.
+
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git log
+commit 09cbcc9df5625dabf78ecbc39f29b6984e7d70e1 (HEAD -> current, origin/current, origin/HEAD)
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 10:39:23 2021 -0800
+
+    replace John Deacon as Queen's bassist
+
+commit 15db96011ee62521736308b2ba5942a14486a347
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 10:34:59 2021 -0800
+
+    add current queen lineup
+
+commit 411c922d351287236d66f4a6c4826be756066420
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 10:33:55 2021 -0800
+
+    add current fleetwood mac lineup
+
+commit 247e20355404df30c851e4a4c504997c0d69aaf4 (origin/1970s, 1970s)
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 10:32:37 2021 -0800
+
+    add early 1970s fleetwood mac lineup
+
+commit f31a79f458bdba73633b50119bed81ec89a346c8
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 10:31:56 2021 -0800
+
+    add 1970 queen lineup
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git log --oneline
+09cbcc9 (HEAD -> current, origin/current, origin/HEAD) replace John Deacon as Queen's bassist
+15db960 add current queen lineup
+411c922 add current fleetwood mac lineup
+247e203 (origin/1970s, 1970s) add early 1970s fleetwood mac lineup
+f31a79f add 1970 queen lineup
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git diff 09cbcc9 15db960
+diff --git a/queen.txt b/queen.txt
+index 0e0fa0d..f7f4a33 100644
+--- a/queen.txt
++++ b/queen.txt
+@@ -1,4 +1,4 @@
+ Lead Vocals: Adam Lambert
+ Lead Guitar: Brian May
+-Bass: Neil Fairclough
++Bass: John Deacon
+ Drums: Roger Taylor
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git add queen.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git diff
+diff --git a/fleetwoodmac.txt b/fleetwoodmac.txt
+index 653b184..8c384c0 100644
+--- a/fleetwoodmac.txt
++++ b/fleetwoodmac.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Stevie Nicks
++Lead Vocals: Stevie Chicks
+ Lead Guitar: Mike Campbell
+ Bass: John McVie
+ Drums: Mick Fleetwood
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git diff --staged
+diff --git a/queen.txt b/queen.txt
+index 0e0fa0d..f5979b8 100644
+--- a/queen.txt
++++ b/queen.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Adam Lambert
++Lead Vocals: Michal Lerman
+ Lead Guitar: Brian May
+ Bass: Neil Fairclough
+ Drums: Roger Taylor
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$ git diff HEAD
+diff --git a/fleetwoodmac.txt b/fleetwoodmac.txt
+index 653b184..8c384c0 100644
+--- a/fleetwoodmac.txt
++++ b/fleetwoodmac.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Stevie Nicks
++Lead Vocals: Stevie Chicks
+ Lead Guitar: Mike Campbell
+ Bass: John McVie
+ Drums: Mick Fleetwood
+diff --git a/queen.txt b/queen.txt
+index 0e0fa0d..f5979b8 100644
+--- a/queen.txt
++++ b/queen.txt
+@@ -1,4 +1,4 @@
+-Lead Vocals: Adam Lambert
++Lead Vocals: Michal Lerman
+ Lead Guitar: Brian May
+ Bass: Neil Fairclough
+ Drums: Roger Taylor
+\ No newline at end of file
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/GitDiff/git-diff-exercise (current)
+$
