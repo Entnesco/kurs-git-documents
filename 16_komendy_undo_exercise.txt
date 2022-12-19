@@ -1,0 +1,218 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise
+$ git clone https://github.com/Colt/yesterday-exercise
+Cloning into 'yesterday-exercise'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 24 (delta 7), reused 24 (delta 7), pack-reused 0
+Receiving objects: 100% (24/24), done.
+Resolving deltas: 100% (7/7), done.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise
+$ cd yesterday-exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ cd ..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise
+$ cd yesterday-exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git log --oneline
+f199959 (HEAD -> master, origin/master, origin/HEAD) rework final verse
+8e3111c rework chorus
+b88b254 rework second verse
+b593444 rework first verse
+cdd927c finish original lyrics
+9518e20 add original chorus
+9858f43 add original second verse
+485a339 add original first verse
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git checkout 485a339
+Note: switching to '485a339'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 485a339 add original first verse
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise ((485a339...))
+$ git switch --
+fatal: missing branch or commit argument
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise ((485a339...))
+$ git switch -
+Previous HEAD position was 485a339 add original first verse
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git checkout cdd927c
+Note: switching to 'cdd927c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at cdd927c finish original lyrics
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise ((cdd927c...))
+$ git switch -c scrambled-eggs
+Switched to a new branch 'scrambled-eggs'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (scrambled-eggs)
+$ git status
+On branch scrambled-eggs
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (scrambled-eggs)
+$ git log
+commit cdd927c0bebbef64adf38f8cb58a186d33aaeeab (HEAD -> scrambled-eggs)
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 18:22:17 2021 -0800
+
+    finish original lyrics
+
+commit 9518e200d1aed15ddd7654d151feb5132ca17632
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 18:21:55 2021 -0800
+
+    add original chorus
+
+commit 9858f43403a7c6c5e92380a21a794faa6af87aff
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 18:21:34 2021 -0800
+
+    add original second verse
+
+commit 485a33962fc19a957cabb54273e99465fdba9c9d
+Author: Colt Steele <5498438+Colt@users.noreply.github.com>
+Date:   Tue Feb 23 18:21:21 2021 -0800
+
+    add original first verse
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (scrambled-eggs)
+$ git switch -
+fatal: a branch is expected, got commit 'cdd927c0bebbef64adf38f8cb58a186d33aaeeab'
+hint: If you want to detach HEAD at the commit, try again with the --detach option.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (scrambled-eggs)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git restore lyrics.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git commit -m "add my itch"
+[master d34dd9e] add my itch
+ 1 file changed, 7 insertions(+), 17 deletions(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git commit -am "add more changes"
+[master 2ebbf0c] add more changes
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git log --oneline
+2ebbf0c (HEAD -> master) add more changes
+d34dd9e add my itch
+f199959 (origin/master, origin/HEAD) rework final verse
+8e3111c rework chorus
+b88b254 rework second verse
+b593444 rework first verse
+cdd927c (scrambled-eggs) finish original lyrics
+9518e20 add original chorus
+9858f43 add original second verse
+485a339 add original first verse
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git reset f199959
+Unstaged changes after reset:
+M       lyrics.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git switch -c my-branch
+Switched to a new branch 'my-branch'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (my-branch)
+$ git switch -
+Switched to branch 'master'
+M       lyrics.txt
+Your branch is up to date with 'origin/master'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git switch my-branch
+Switched to branch 'my-branch'
+M       lyrics.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (my-branch)
+$ git switch master
+Switched to branch 'master'
+M       lyrics.txt
+Your branch is up to date with 'origin/master'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$ git switch my-branch
+Switched to branch 'my-branch'
+M       lyrics.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (my-branch)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (my-branch)
+$ git commit -m "add my lyrics"
+[my-branch 4e8a13e] add my lyrics
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (my-branch)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Practise_repo/Exercise/yesterday-exercise (master)
+$
