@@ -53,3 +53,7 @@ git diff commit1 commit2 - porównania 2 commitów
 git stash - zapisanie niezacomitowanych zmian
 git stash pop - uwolnienie zapisanych zmian
 git stash apply - wklejenie zapisanych zmian bez ich uwalniania
+git stash list - lista zapisanych zmian
+git stash apply stash@{2} - wklejenie konkretnej zmiany z listy zmian
+git stash drop stash@{2} - usuwanie konkretniej zmiany z listy zmian
+git stash clear - usuwanie wszystkich zmian z listy zmian
