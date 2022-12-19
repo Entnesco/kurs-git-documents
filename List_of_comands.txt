@@ -72,3 +72,7 @@ git checkout -- <file> -to discard any changes in that file
 git restore <file-name> - discard any changes in that file
 git restore --source HEAD~1 <file> - restore file form previouse commits
 git restore --staged <file> -unstage staged files
+
+#git reset command
+git reset <commit-hash> - will reset the repo back to a specific commit rest commits are gone
+git reset --hard <commit-hash> - will reset the repo back to a specific commit rest commits are gone and changes are lost
