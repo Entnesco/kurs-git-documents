@@ -57,3 +57,13 @@ git stash list - lista zapisanych zmian
 git stash apply stash@{2} - wklejenie konkretnej zmiany z listy zmian
 git stash drop stash@{2} - usuwanie konkretniej zmiany z listy zmian
 git stash clear - usuwanie wszystkich zmian z listy zmian
+
+#git checkout command
+git checkout <commit_hash> - cofanie do wybranego commita
+#if u wanna go back to current branch use "git switch"
+#u can create new branch if u go back to previous commit
+git checkout HEAD~1 - go back to parant
+git checkout HEAD~2 - go back to grandparent~
+git switch - - go back to previouse branch
+git checkout HEAD <file> -to discard any changes in that file
+git checkout -- <file> -to discard any changes in that file
