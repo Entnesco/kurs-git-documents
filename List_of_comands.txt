@@ -35,6 +35,7 @@ git branch -D <branch_name> - force delete branch
 git branch -m <new_name> - rename branch
 git branch -v - more info abaut evry branch
 git branch -M <main> - rename current branch to main
+git branch -r - show origin branches
 
 #git merge command
 git merge <branch_name> - merging branches
