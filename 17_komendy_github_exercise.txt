@@ -1,0 +1,173 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ls
+Cloning/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ mkdir Github_exercise
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ls
+Cloning/  Github_exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ cd Github_exercise/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise
+$ git init
+Initialized empty Git repository in C:/Users/Michal/Desktop/My_documents/git/Github/Github_exercise/.git/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (master)
+$ git branch -M main
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git remote
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git remote add origin https://github.com/Entnesco/Github-exercise.git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git remote
+origin
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ touch favorites.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git commit -m "make first commit"
+[main (root-commit) 7b975a9] make first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 favorites.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Entnesco/Github-exercise.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ branch movies
+bash: branch: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git branch movies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git switch -c foods
+Switched to a new branch 'foods'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (foods)
+$ git commit -am "add favorite food"
+[foods 4cec797] add favorite food
+ 1 file changed, 3 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (foods)
+$ git status
+On branch foods
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (foods)
+$ git switch m
+main     movies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (foods)
+$ git switch movies
+Switched to branch 'movies'
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (movies)
+$ git commit -am "add favorite movies"
+[movies 9ea8bde] add favorite movies
+ 1 file changed, 3 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (movies)
+$ git push origin movies
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 268 bytes | 268.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'movies' on GitHub by visiting:
+remote:      https://github.com/Entnesco/Github-exercise/pull/new/movies
+remote:
+To https://github.com/Entnesco/Github-exercise.git
+ * [new branch]      movies -> movies
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (movies)
+$ git push origin foods
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'foods' on GitHub by visiting:
+remote:      https://github.com/Entnesco/Github-exercise/pull/new/foods
+remote:
+To https://github.com/Entnesco/Github-exercise.git
+ * [new branch]      foods -> foods
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (movies)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git merge foods
+Updating 7b975a9..4cec797
+Fast-forward
+ favorites.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git merge movies
+Auto-merging favorites.txt
+CONFLICT (content): Merge conflict in favorites.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main|MERGING)
+$ git commit -am "fix conglicts"
+[main 9fca6af] fix conglicts
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Entnesco/Github-exercise.git
+   7b975a9..9fca6af  main -> main
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Github_exercise (main)
+$
