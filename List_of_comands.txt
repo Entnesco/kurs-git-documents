@@ -92,3 +92,6 @@ git push <remote> <branch> - sending work on connected github
 git push <remote> <local-branch>:<remote-branch> - send files on another branch on github
 git push -u <remote> <branch> - connect branch to origin
 #after using above command u can just type "git push" for pushing files to github
+
+#git clone command
+git clone <url> - cloning repo
