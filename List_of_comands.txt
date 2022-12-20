@@ -97,3 +97,7 @@ git push -u <remote> <branch> - connect branch to origin
 
 #git clone command
 git clone <url> - cloning repo
+
+#git fetch command
+git fetch <remote> - uplad changes but not merge them
+git fetch <remote> <branch> - fetch one branch
