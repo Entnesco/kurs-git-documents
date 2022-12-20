@@ -1,0 +1,34 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ cd ..\
+>
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Github/  Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Kurs_dokumenty/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git remote
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git remote add origin https://github.com/Entnesco/kurs-git-documents.git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git remote
+origin
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git remote -v
+origin  https://github.com/Entnesco/kurs-git-documents.git (fetch)
+origin  https://github.com/Entnesco/kurs-git-documents.git (push)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$

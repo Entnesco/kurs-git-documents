@@ -79,3 +79,10 @@ git reset --hard <commit-hash> - will reset the repo back to a specific commit r
 
 #git revert command
 git revert <commit-hash> - will go back to previous commit but they are not gone
+
+#git remote command
+git remote - check for connections with github print name
+git remote -v - check for connections with github print links
+git remote add <name> <url> - connect local repo with github repo
+git remote rename <old> <new> - rename connection
+git remote remove <name> - delete connection
