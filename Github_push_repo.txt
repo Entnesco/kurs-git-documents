@@ -1,0 +1,24 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git add .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git commit -m "add file github push repo"
+[master da7d427] add file github push repo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Github_push_repo.txt
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Entnesco/kurs-git-documents.git
+   6531209..da7d427  master -> master
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Kurs_dokumenty (master)
+$
