@@ -83,9 +83,12 @@ git revert <commit-hash> - will go back to previous commit but they are not gone
 #git remote command
 git remote - check for connections with github print name
 git remote -v - check for connections with github print links
-git remote add <name> <url> - connect local repo with github repo
+git remote add <name(origin)> <url> - connect local repo with github repo
 git remote rename <old> <new> - rename connection
 git remote remove <name> - delete connection
 
 #git push command
 git push <remote> <branch> - sending work on connected github
+git push <remote> <local-branch>:<remote-branch> - send files on another branch on github
+git push -u <remote> <branch> - connect branch to origin
+#after using above command u can just type "git push" for pushing files to github
