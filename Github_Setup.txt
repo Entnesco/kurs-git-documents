@@ -1,0 +1,184 @@
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ code .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ mkdir Github
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ ls
+Github/  Kurs_dokumenty/  Practise_repo/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git
+$ cd Github/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ mkdir Cloning
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ cd Cloning/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning
+$ git clone https://github.com/gabrielecirulli/2048.git
+Cloning into '2048'...
+remote: Enumerating objects: 1315, done.
+remote: Total 1315 (delta 0), reused 0 (delta 0), pack-reused 1315
+Receiving objects: 100% (1315/1315), 615.46 KiB | 3.31 MiB/s, done.
+Resolving deltas: 100% (773/773), done.
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning
+$ ls
+2048/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning
+$ cd 2048/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ ls
+CONTRIBUTING.md  README.md  favicon.ico  js/    style/
+LICENSE.txt      Rakefile   index.html   meta/
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ branch
+bash: branch: command not found
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ git branch
+* master
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ git log
+commit fc1ef4fe5a5fcccea7590f3e4c187c75980b353f (HEAD -> master, origin/master, origin/HEAD)
+Author: Gabriele Cirulli <gabrielecirulli@users.noreply.github.com>
+Date:   Sat Oct 27 18:25:12 2018 +0200
+
+    Remove Adsense code
+
+commit ffa8559d622e6c1b216e43de969f037204cdb102
+Author: Gabriele Cirulli <gabrielecirulli@users.noreply.github.com>
+Date:   Sat Oct 27 13:21:45 2018 +0200
+
+    Add AdSense code
+
+commit ac03b1f01628038039b74b67f2e284b233bd143e
+Merge: d39dcf7 8ae5ccd
+Author: Anna Harren <iirelu@users.noreply.github.com>
+Date:   Fri Oct 6 07:36:36 2017 +0200
+
+    Merge pull request #463 from marvin08/master
+
+    Update main.scss (Add missing semicolon)
+
+commit 8ae5ccd1e0bdbe1298e5da4f023b14c0eaec25da
+Author: Akshay Shrimali <akshaytryingtocode@gmail.com>
+Date:   Sun Oct 1 00:31:17 2017 +0530
+
+    Update main.scss
+
+commit d39dcf79449cc282de841d88cab9e0f67b284eb3
+Merge: 837ca51 163e480
+Author: sigod <sigod@users.noreply.github.com>
+Date:   Tue Jun 6 15:24:21 2017 +0300
+
+    Merge pull request #444 from jnohavica/edge-support
+
+    Call window.localStorage moved into try catch
+
+commit 163e48088a97712779042d9584f9c7603461747d
+Author: Jan Nohavica <nohavicajan@gmail.com>
+Date:   Wed Jan 25 23:03:01 2017 +0100
+
+    Call window.localStorage moved into try catch due to possibly exception in Edge.
+
+commit 837ca51b6f254c416cb74b6a1baa1bb7cc7e6fd1
+Merge: 0ce1da5 cbd3055
+Author: sigod <sigod@users.noreply.github.com>
+Date:   Tue Oct 20 21:43:34 2015 +0300
+
+    Merge pull request #233 from sigod/ie9-styles
+
+    fix styles for IE9: add -ms-transform
+
+commit 0ce1da5e691edcf6b677b2a3dc53e9678bf1a254
+Merge: 76336e8 450ddd0
+Author: sigod <sigod@users.noreply.github.com>
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ start .
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ git config user.email
+grantes208@gmail.com
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ ls -al ~/.ssh
+ls: cannot access '/c/Users/Michal/.ssh': No such file or directory
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github/Cloning/2048 (master)
+$ cd ../..
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ls -al ~/.ssh
+ls: cannot access '/c/Users/Michal/.ssh': No such file or directory
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ssh-keygen -t ed25519 -C "grantes208@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Michal/.ssh/id_ed25519):
+Created directory '/c/Users/Michal/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Michal/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Michal/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:htq4+NWL7Wvze8V+sY92/x+sRWi+Sz2S6Pi/uucGjd4 grantes208@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|                 |
+|       .      .  |
+|      . S   o+ . |
+|     + o   o+.B. |
+|    o o . ..oB *o|
+|   . o oo.o.oEBo=|
+|  ..o .o==+BBO+oX|
++----[SHA256]-----+
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ eval "$(ssh-agent -s)"
+Agent pid 753
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ssh-add ~/.ssh/id_ed25519
+Enter passphrase for /c/Users/Michal/.ssh/id_ed25519:
+Identity added: /c/Users/Michal/.ssh/id_ed25519 (grantes208@gmail.com)
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ ls -al ~/.ssh
+total 22
+drwxr-xr-x 1 Michal 197609   0 Dec 20 10:15 ./
+drwxr-xr-x 1 Michal 197609   0 Dec 20 10:15 ../
+-rw-r--r-- 1 Michal 197609 464 Dec 20 10:15 id_ed25519
+-rw-r--r-- 1 Michal 197609 102 Dec 20 10:15 id_ed25519.pub
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$ clip < ~/.ssh/id_ed25519.pub
+
+Michal@DESKTOP-F2NUORL MINGW64 ~/Desktop/My_documents/git/Github
+$
