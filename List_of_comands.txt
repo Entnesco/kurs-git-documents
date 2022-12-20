@@ -86,3 +86,6 @@ git remote -v - check for connections with github print links
 git remote add <name> <url> - connect local repo with github repo
 git remote rename <old> <new> - rename connection
 git remote remove <name> - delete connection
+
+#git push command
+git push <remote> <branch> - sending work on connected github
