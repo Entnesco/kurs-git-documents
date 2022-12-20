@@ -1,34 +1,34 @@
 ###basic comands###
-ls - list - lista elementów w folderze
-ls -a - lista wszystkich elementów w folderze razem z ukrytymi
-cd - zmina scieżki
-cd .. - wycowanie do poziomu wyżej
-start . - otwarcie obecnej lokalizacji
-pwd - wyświetlenie obecnej ścieżki
-touch - tworzenie plików
-mkdir - tworzenie folderów
-rm <nazwa> - usuwanie plików
-rm -rf <nazwa> - usuwanie folderu
-code . - otworzenie visual studio
+ls - list - list of elements
+ls -a - list of elements with hiden ones
+cd - change root
+cd .. - change root to one level lower
+start . - open current location
+pwd - pront current location
+touch - crate file
+mkdir - create folder
+rm <nazwa> - delete file
+rm -rf <nazwa> - delete folder
+code . - open visual studio
 
 
 ###git commands###
 
 #basic comands
-git init - inicjalizacja repo
-git status - status repo
-git add <nazwa> - dodanie do repo
-git add . - dodanie do repo wszystkich plików
-git commit -m "example message" - zacomitowanie dodanych zmian w repo
-git log - log zmian na repo
-git log --oneline - log jednolinijkowy
-git commit --amend - zacomitowanie nowego elementu do poprzedniego commita
+git init - init new repo
+git status - print repo status
+git add <nazwa> - add file to repo
+git add . - add all chenges to repo
+git commit -m "example message" - commit added changes
+git log - print repo's log
+git log --oneline - oneline log
+git commit --amend - commit new elment to previous commit
 
 #git branch commands
-git branch - lista gałęzi 
-git branch <branch_name> - tworzenie nowej gałęzi
-git switch <branch_name> - zmiana gałęzi
-git commit -a -m <comment> - git add. oraz git commit -m w jednym
+git branch - list of branches
+git branch <branch_name> - create new branch
+git switch <branch_name> - change branch
+git commit -a -m <comment> - git add. and git commit -m in one command
 git checkout <branch_name> - git switch and more
 git switch -c <branch_name> - create and switch to new branch
 git branch -D <branch_name> - force delete branch
@@ -39,27 +39,27 @@ git branch -v - more info abaut evry branch
 git merge <branch_name> - merging branches
 
 #git diff command
-git diff - lista niezatwierdzonych zmian
-git diff HEAD - lista wszystkich różnic
-git diff --staged - lista różnic w dodanych plikach
-git diff --cached - lista różnic w dodanych plikach
-git diff HEAD <filename> - porównanie z wskazanym plikiem
-git diff --cached <filename> - porównanie z wskazanym plikiem
-git diff --staged <filename> - porównanie z wskazanym plikiem
-git diff branch1 branch2 - porówniania 2 branchów
-git diff commit1 commit2 - porównania 2 commitów
+git diff - list of unapproved changes
+git diff HEAD - list of all changes
+git diff --staged - list of added files
+git diff --cached - list of added files
+git diff HEAD <filename> - comparison with indicated file
+git diff --cached <filename> - comparison with indicated file
+git diff --staged <filename> - comparison with indicated file
+git diff branch1 branch2 - comprarison between two branches
+git diff commit1 commit2 - comparison between two commits
 
 #git stash command
-git stash - zapisanie niezacomitowanych zmian
-git stash pop - uwolnienie zapisanych zmian
-git stash apply - wklejenie zapisanych zmian bez ich uwalniania
-git stash list - lista zapisanych zmian
-git stash apply stash@{2} - wklejenie konkretnej zmiany z listy zmian
-git stash drop stash@{2} - usuwanie konkretniej zmiany z listy zmian
-git stash clear - usuwanie wszystkich zmian z listy zmian
+git stash - save uncommited changes
+git stash pop - release saved changes
+git stash apply - paste saved changes
+git stash list - list of saved changes
+git stash apply stash@{2} - paste chosen stash
+git stash drop stash@{2} - delete from stash list
+git stash clear - clear all stash list
 
 #git checkout command
-git checkout <commit_hash> - cofanie do wybranego commita
+git checkout <commit_hash> - go back to chosen commit
 #if u wanna go back to current branch use "git switch"
 #u can create new branch if u go back to previous commit
 git checkout HEAD~1 - go back to parant
