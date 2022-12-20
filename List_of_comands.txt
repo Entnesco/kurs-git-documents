@@ -101,3 +101,6 @@ git clone <url> - cloning repo
 #git fetch command
 git fetch <remote> - uplad changes but not merge them
 git fetch <remote> <branch> - fetch one branch
+
+#git pull command
+git pull <remote> <branch> - upland changes and merge them
